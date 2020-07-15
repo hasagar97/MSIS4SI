@@ -21,14 +21,14 @@ The Ratios can be determined by studying the data one small rule can: ‘Let the
 
 ### Tradional approaches vs this approach
 Traditional approaches crop the large image and forward pass it throught the neural network and then stich back the segmented masks.
-![Traditional Architecture](Traditional.png)
+![Traditional Architecture](Traditional.PNG)
 #### Problems with Tradional
 - Network needs to be complex.
 - Network needs to learn the variance of target object size.
 - One Ratio isn’t enough.
 
 What we suggest is to have multiple neural network which look(have their input) at the images at different zoom levels(leading to different crop ratios). And then create an ensemble of the output given by these networks. Flowchart to understand more: 
-![Traditional Architecture](Architecture_NN.png)
+![Traditional Architecture](Architecture_NN.PNG)
 
 
 *To understand mmore about the ratio please read the code*
